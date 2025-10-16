@@ -4,7 +4,7 @@ const locations = [
   {
     city: "Lagos",
     address: "15 Obafemi Awolowo Way, Ikeja GRA, Lagos",
-    phone: "+234 803 123 4567",
+    phone: "+234 913 861 818",
   },
   {
     city: "Ibadan, Oyo",

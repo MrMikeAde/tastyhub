@@ -63,7 +63,7 @@ export default function HeroBanner() {
             <div className="text-center md:text-left space-y-6 animate-slide-in-left order-2 md:order-1">
               <div className="space-y-4">
                 <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-primary leading-tight text-balance drop-shadow-sm">
-                  Freshly Made. Always Crunchy.
+                  Freshly Made. Always Tasty.
                 </h1>
                 <p className="text-lg md:text-xl text-[#555555] max-w-xl mx-auto md:mx-0 text-balance leading-relaxed">
                   Delicious meals prepared fresh, fast, and with love — delivered right to your door or ready for
@@ -85,7 +85,7 @@ export default function HeroBanner() {
 
             {/* Right side - Featured image carousel */}
             <div className="relative order-1 md:order-2 animate-slide-in-right">
-              <div className="relative aspect-square md:aspect-auto md:h-[500px] lg:h-[600px] rounded-3xl overflow-hidden shadow-2xl">
+              <div className="relative aspect-square md:aspect-auto md:h-[500px] lg:h-[600px] rounded-full overflow-hidden shadow-2xl">
                 {heroImages.map((image, index) => (
                   <div
                     key={index}
@@ -103,23 +103,6 @@ export default function HeroBanner() {
                       loading={index === 0 ? "eager" : "lazy"}
                     />
                   </div>
-                ))}
-              </div>
-
-              {/* Image indicators */}
-              <div className="absolute -bottom-4 left-1/2 -translate-x-1/2 flex gap-2 bg-white/80 backdrop-blur-sm px-4 py-2 rounded-full shadow-lg">
-                {heroImages.map((_, index) => (
-                  <button
-                    key={index}
-                    onClick={() => setCurrentImage(index)}
-                    className={`w-2 h-2 rounded-full transition-all min-h-[44px] min-w-[44px] flex items-center justify-center ${
-                      index === currentImage ? "bg-primary w-6" : "bg-gray-300"
-                    }`}
-                    aria-label={`Go to slide ${index + 1}`}
-                    aria-current={index === currentImage}
-                  >
-                    <span className="sr-only">Slide {index + 1}</span>
-                  </button>
                 ))}
               </div>
             </div>
