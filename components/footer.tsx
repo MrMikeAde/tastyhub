@@ -28,7 +28,7 @@ export default function Footer() {
           {/* Brand */}
           <div>
             <h3 className="text-3xl font-bold text-secondary mb-4">TastyHub</h3>
-            <p className="text-white/80 mb-4">Freshly Made. Always Crunchy.</p>
+            <p className="text-white/80 mb-4">Freshly Made. Always Tasty.</p>
             <div className="flex gap-4">
               <a href="#" className="hover:text-secondary transition-colors">
                 <Facebook className="w-5 h-5" />
@@ -49,21 +49,9 @@ export default function Footer() {
           <div>
             <h4 className="font-bold mb-4">Quick Links</h4>
             <ul className="space-y-2">
-              <li>
-                <a href="#" className="text-white/80 hover:text-secondary transition-colors">
-                  Careers
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-white/80 hover:text-secondary transition-colors">
-                  Privacy Policy
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-white/80 hover:text-secondary transition-colors">
-                  Terms of Use
-                </a>
-              </li>
+              <li className="text-white/80">Careers</li>
+              <li className="text-white/80">Privacy Policy</li>
+              <li className="text-white/80">Terms of Use</li>
             </ul>
           </div>
 

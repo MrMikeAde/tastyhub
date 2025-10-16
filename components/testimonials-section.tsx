@@ -5,28 +5,7 @@ import { Star, ChevronLeft, ChevronRight } from "lucide-react"
 import { testimonialsData } from "@/lib/testimonials-data"
 
 export default function TestimonialsSection() {
-  const [currentIndex, setCurrentIndex] = useState(0)
-
-  useEffect(() => {
-    const timer = setInterval(() => {
-      setCurrentIndex((prev) => (prev + 1) % testimonialsData.length)
-    }, 5000)
-    return () => clearInterval(timer)
-  }, [])
-
-  const nextTestimonial = () => {
-    setCurrentIndex((prev) => (prev + 1) % testimonialsData.length)
-  }
-
-  const prevTestimonial = () => {
-    setCurrentIndex((prev) => (prev - 1 + testimonialsData.length) % testimonialsData.length)
-  }
-
-  const visibleTestimonials = [
-    testimonialsData[currentIndex],
-    testimonialsData[(currentIndex + 1) % testimonialsData.length],
-    testimonialsData[(currentIndex + 2) % testimonialsData.length],
-  ]
+  const visibleTestimonials = testimonialsData.slice(0, 3)
 
   return (
     <section className="py-20 bg-muted">
@@ -39,7 +18,7 @@ export default function TestimonialsSection() {
         <div className="relative max-w-6xl mx-auto">
           <div className="grid md:grid-cols-3 gap-6">
             {visibleTestimonials.map((testimonial, index) => (
-              <div key={`${currentIndex}-${index}`} className="bg-card p-6 rounded-lg shadow-md animate-slide-in">
+              <div key={index} className="bg-card p-6 rounded-lg shadow-md animate-slide-in">
                 <div className="flex mb-4">
                   {[...Array(testimonial.rating)].map((_, i) => (
                     <Star key={i} className="w-5 h-5 fill-secondary text-secondary" />
@@ -58,20 +37,6 @@ export default function TestimonialsSection() {
               </div>
             ))}
           </div>
-
-          {/* Navigation */}
-          <button
-            onClick={prevTestimonial}
-            className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 bg-white hover:bg-muted p-3 rounded-full shadow-lg transition-all hidden md:block"
-          >
-            <ChevronLeft className="w-6 h-6" />
-          </button>
-          <button
-            onClick={nextTestimonial}
-            className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 bg-white hover:bg-muted p-3 rounded-full shadow-lg transition-all hidden md:block"
-          >
-            <ChevronRight className="w-6 h-6" />
-          </button>
         </div>
       </div>
     </section>
