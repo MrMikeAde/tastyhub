@@ -2,7 +2,7 @@ import { Calendar, Phone } from "lucide-react"
 
 export default function AnnouncementBar() {
   return (
-    <div className="bg-primary text-white py-2 text-center text-sm">
+    <div className="bg-primary text-white py-2 text-center text-sm animate-subtle-pulse">
       <div className="container mx-auto px-4 flex justify-center items-center gap-4">
         <span>If you want our web development service,</span>
         <a
