@@ -1,4 +1,3 @@
-import Header from "@/components/header"
 import HeroBanner from "@/components/hero-banner"
 import MenuSection from "@/components/menu-section"
 import OrderSteps from "@/components/order-steps"
@@ -9,7 +8,6 @@ import Footer from "@/components/footer"
 export default function Home() {
   return (
     <main className="min-h-screen">
-      <Header />
       <HeroBanner />
       <MenuSection />
       <OrderSteps />

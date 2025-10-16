@@ -4,17 +4,17 @@ const locations = [
   {
     city: "Lagos",
     address: "15 Obafemi Awolowo Way, Ikeja GRA, Lagos",
-    phone: "+234 913 861 818",
+    phone: "+234 913 186 1818",
   },
   {
     city: "Ibadan, Oyo",
     address: "Bodija Market Road, Ibadan, Oyo State",
-    phone: "+234 803 234 5678",
+    phone: "+234 913 186 1818",
   },
   {
     city: "Abuja",
     address: "Plot 1234, Adetokunbo Ademola Crescent, Wuse 2, Abuja",
-    phone: "+234 803 345 6789",
+    phone: "+234 913 186 1818",
   },
 ]
 
