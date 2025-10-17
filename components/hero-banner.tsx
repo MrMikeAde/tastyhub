@@ -9,6 +9,12 @@ const heroImages = [
   "/delicious-juicy-burger-with-cheese-and-lettuce.jpg",
   "/crispy-golden-french-fries-in-basket.jpg",
   "/fried-chicken-pieces-golden-and-crispy.jpg",
+  "/steak-homemade.webp",
+  "/full-table.webp",
+  "/penne-pasta.webp",
+  "/sliced-grilled-beef.webp",
+  "/fried-chicken-with-veg.webp",
+  "/sandwich-french-fries.webp",
 ]
 
 export default function HeroBanner() {
