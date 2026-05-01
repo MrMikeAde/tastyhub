@@ -40,8 +40,8 @@ export default function ContactSection() {
                   </div>
                   <div>
                     <p className="font-semibold mb-1">Phone</p>
-                    <a href="tel:+2348031234567" className="text-muted-foreground hover:text-primary transition-colors">
-                      +234 913 861 818
+                    <a href="tel:+2349131861818" className="text-muted-foreground hover:text-primary transition-colors">
+                      +234 913 186 1818
                     </a>
                   </div>
                 </div>
