@@ -20,7 +20,6 @@ const openSans = Open_Sans({
 export const metadata = {
   title: "TastyHub Online - Freshly Made. Always Crunchy.",
   description: "Order delicious fast food online from TastyHub - burgers, chicken, rice, and more!",
-    generator: 'v0.app'
 }
 
 export default function RootLayout({
